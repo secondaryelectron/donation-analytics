@@ -122,6 +122,8 @@ def summarize(cur,p,cmte_id,zip_code,year):
 
     donations = [donation[0] for donation in donations]
 
+    donations.sort()
+
     running_total = sum(donations)
 
     running_counts = len(donations)
